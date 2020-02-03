@@ -1,0 +1,8 @@
+{
+  "name": "barbershop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/juillianlee/barbershop.git",
+  "author": "Juillian Lee <juillian.lee@actionlabs.com.br>",
+  "license": "MIT"
+}
