@@ -1,5 +1,6 @@
 const Koa = require('koa');
 const Router = require('koa-router');
+const graphql = require('./graphql');
 
 // cria uma instancia do koa
 const app = new Koa();
@@ -15,5 +16,8 @@ router.get('/', (ctx) => {
 // registra no koa o router
 app.use(router.routes());
 app.use(router.allowedMethods());
+
+// registra o apollo-server
+app.use(graphql.getMiddleware());
 
 module.exports = app;
