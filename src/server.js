@@ -1,6 +1,10 @@
 const Koa = require('koa');
 const Router = require('koa-router');
 const graphql = require('./graphql');
+const database = require('./database');
+
+// faz a conexão com o mongo
+database.connect();
 
 // cria uma instancia do koa
 const app = new Koa();

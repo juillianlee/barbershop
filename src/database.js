@@ -10,12 +10,15 @@ const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   autoCreate: true,
+  useCreateIndex: true
 };
 
-mongoose.connect(uri, options);
-mongoose.Promise = global.Promise;
-
-module.exports = mongoose;
+module.exports = {
+  connect() {
+    mongoose.connect(uri, options);
+    mongoose.Promise = global.Promise;
+  }
+}
 
 // criar o usuário para o banco de dados
 // use barbershop

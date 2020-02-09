@@ -1,3 +1,4 @@
+require('./src/database').connect();
 const User = require('./src/models/user');
 
 User.create({
