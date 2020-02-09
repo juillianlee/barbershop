@@ -12,3 +12,7 @@ node_modules/
 # dotenv environment variables file
 .env
 .env.test
+
+.DS_Store
+
+__tests__/coverage
